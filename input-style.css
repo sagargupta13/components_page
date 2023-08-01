@@ -1,0 +1,303 @@
+.input-f {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 30px;
+    
+  }
+
+.group {
+    position: relative;
+   }
+   
+
+  /* for normal input    */
+   
+  
+
+
+
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   .floating-label {
+    color: #999;
+    font-size: 16px;
+    font-weight:lighter;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #a33db5;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #a33db5;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+   
+   .s-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #4CAF50;
+    background: transparent;
+   }
+   
+   .s-input:focus {
+    outline: none;
+   }
+   
+   .success-label {
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight:lighter;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .s-input:focus ~ label, .s-input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #4CAF50;
+   }
+   
+   .s-bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .s-bar:before, .s-bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #4CAF50;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .s-bar:before {
+    left: 50%;
+   }
+   
+   .s-bar:after {
+    right: 50%;
+   }
+   
+   .s-input:focus ~ .s-bar:before, .s-input:focus ~ .s-bar:after {
+    width: 50%;
+   }
+   
+   .s-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .s-input:focus ~ .s-highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #4CAF50;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+
+   
+   .e-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #F44336;
+    background: transparent;
+   }
+   
+   .e-input:focus {
+    outline: none;
+   }
+   
+   .error-label {
+    color: #F44336;
+    font-size: 16px;
+    font-weight:lighter;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .e-input:focus ~ label, .e-input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #F44336;
+   }
+   
+   .e-bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .e-bar:before, .e-bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #F44336;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .e-bar:before {
+    left: 50%;
+   }
+   
+   .e-bar:after {
+    right: 50%;
+   }
+   
+   .e-input:focus ~ .e-bar:before, .e-input:focus ~ .e-bar:after {
+    width: 50%;
+   }
+   
+   .e-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .e-input:focus ~ .e-highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #F44336;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+
+   /* for input with material icon  */
+
+
+  
+   .i-icon{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-180%, -40%);
+    margin-left: 180px;
+   }
